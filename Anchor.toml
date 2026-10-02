@@ -1,0 +1,24 @@
+[toolchain]
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+presale = "EGFHbbVkZKhv3owPhUocyBqTQKeYSuehaxQ7ZMLZ2p1D"
+
+[programs.devnet]
+presale = "EGFHbbVkZKhv3owPhUocyBqTQKeYSuehaxQ7ZMLZ2p1D"
+
+[programs.mainnet]
+presale = "EGFHbbVkZKhv3owPhUocyBqTQKeYSuehaxQ7ZMLZ2p1D"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "cargo test --manifest-path programs/presale/Cargo.toml -- --test-threads=8"
